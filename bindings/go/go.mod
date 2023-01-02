@@ -5,8 +5,6 @@ go 1.19
 require (
 	github.com/disintegration/imaging v1.6.2
 	github.com/fogleman/gg v1.3.0
-	github.com/mcuadros/go-rpi-rgb-led-matrix v0.0.0-20180401002551-b26063b3169a
-	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
 	github.com/zmb3/spotify v1.3.0
 	golang.org/x/exp v0.0.0-20190731235908-ec7cb31e5a56
 	golang.org/x/mobile v0.0.0-20221110043201-43a038452099
