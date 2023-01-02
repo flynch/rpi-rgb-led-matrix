@@ -141,7 +141,7 @@ func (tk *ToolKit) PlayGIF(r io.Reader) (chan bool, error) {
 func (tk *ToolKit) PlayJpeg(r io.Reader) error {
 	jpgImage, err := jpeg.Decode(r)
 	if err != nil {
-		panic(err)
+		return err
 	}
 	return tk.PlayImage(jpgImage, 5*time.Second)
 }
@@ -149,7 +149,7 @@ func (tk *ToolKit) PlayJpeg(r io.Reader) error {
 func (tk *ToolKit) PlayPng(r io.Reader) error {
 	pngImage, err := png.Decode(r)
 	if err != nil {
-		panic(err)
+		return err
 	}
 	return tk.PlayImage(pngImage, 5*time.Second)
 }
